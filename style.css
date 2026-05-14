@@ -1,0 +1,108 @@
+*{margin:0;  padding:0;  box-sizing:border-box;  font-family:Arial,sans-serif}
+body {background:#eaf6ff; 	margin:0px;}
+
+section{padding:40px 20px}
+.hero{padding:60px 20px;text-align:center;background:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=60') center/cover;color:#fff}
+
+.hero h1{font-size:50px;text-shadow:2px 2px 5px #000}
+
+.hero p{margin:15px 0;font-size:20px; color:darkred; font-weight:bold;}
+
+.btn{display:inline-block;  background:DarkOrange;   color:white;   padding:12px 22px;   border-radius:8px;  text-decoration:none; font-weight:bold;}
+/*---------------------------------------------------------------------------*/
+
+.fixed-box {
+position:fixed;
+background:darkred;
+color:white;
+padding:5px;
+border-radius:10px;
+right:0px;
+top:250px;
+font-size:20px;
+}
+/*---------------------------------------------------------------------------*/
+.logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: DarkOrange;
+    padding: 10px;
+}
+
+.logo {width: 40px; height: 40px;}
+.name {font-size: 40px; font-weight: bold; margin-left: 10px;}
+.address {font-size: 30px; text-align: center; margin: 0px; background-color: DarkOrange;}
+
+.sticky-box {position:sticky; top:0px;  z-index:999;}
+
+nav {background:darkgreen; 	border:1px solid white;  width:100%;}
+
+.left li {float:left;}
+.right li {float:right;}
+
+ul {list-style-type:none;    padding:0px;    margin:0px;}
+
+li a {color:white;   text-decoration:none;    font-weight:bold;} 
+
+li {padding:5px 20px; border:1px solid white; background:darkgreen;} 
+
+nav::after {
+content:"";
+display:table;
+clear:both;
+}
+
+.dropdown-content1 li {float:none;}
+
+.dropdown-content1 {
+position:absolute;
+top:131px;
+left:86px;
+display:none;
+}
+
+.dropdown1:hover .dropdown-content1 {
+display:block;
+}
+
+.dropdown-content2 li {float:none;}
+
+.dropdown-content2 {
+position:absolute;
+top:131px;
+left:182px;
+display:none;
+}
+
+.dropdown2:hover .dropdown-content2 {
+display:block;
+}
+
+li:hover {background:DarkOrange;}
+
+@media screen and (max-width:600px) {
+.menu li {float:none;	display:block; width:100%;}
+.dropdown-content1 {position:relative; top:0px; left:0px}
+.dropdown-content2 {position:relative; top:0px; left:0px}}
+
+.sticky-box {position:static;}
+
+/*--------------------------------------------------------------*/
+@media screen and (max-width:600px){
+.cards {display:block;}
+.card{float:none; width:100%;}
+}
+/*--------------------------------------------------------------*/
+
+.cards{display:grid;  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));  gap:20px}
+.card, .note{background:white;   padding:20px;   border-radius:15px;   box-shadow:0 8px 20px gray;}
+.card img{width:100%;  height:200px;   object-fit:cover;  border:1px solid gray;  border-radius:10px 10px 0px 0px;}
+.card:hover {background:DarkOrange;  transition:0.3s;}
+
+input,textarea{width:100%;  padding:10px;  margin:8px 0;  border:1px solid darkgreen;   border-radius:8px}
+button{background:darkgreen;    color:white;  padding:10px 18px;  border:none;  border-radius:8px}
+
+footer{background:darkgreen;  color:white;  text-align:center;  padding:20px;  margin-top:20px}
+
+
